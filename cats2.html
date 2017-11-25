@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <style>
+      h2 {
+        font-family: Lobster, Monospace;
+      }
+
+      .thick-green-border {
+        border-color: green;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 50%;
+      }
+
+    </style>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-8">
+          <h2 class="text-primary text-center">CatPhotoApp</h2>
+        </div>
+        <div class="col-xs-4">
+          <a href="#"><img class="img-responsive   thick-green-border"
+            src="https://bit.ly/fcc-relaxing-cat"
+            alt="A cute orange cat lying on its back. "></a>
+        </div>
+      </div>
+      <img src="http://www.petmd.com/sites/default/files/hypoallergenic-cat-breeds.jpg"
+           class="img-responsive" alt="A nice cat">
+
+      <div class="row">
+        <div class="col-xs-4">
+          <button class="btn btn-block btn-primary">
+            Like
+            <i class="fa fa-thumbs-up"></i>
+          </button>
+        </div>
+        <div class="col-xs-4">
+          <button class="btn btn-block btn-info">
+            Info
+            <i class="fa fa-info-circle"></i>
+          </button>
+        </div>
+        <div class="col-xs-4">
+          <button class="btn btn-block btn-danger">
+            Borrar
+            <i class="fa fa-trash"></i>
+          </button>
+        </div>
+      </div>
+
+      <p>Things cats <span class="text-danger">love</span>:</p>
+      <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+      </ul>
+      <p>Top 3 things cats hate:</p>
+      <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+      </ol>
+      <form action="/submit-cat-photo">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+        <label><input type="checkbox" name="personality"> Loving</label>
+        <label><input type="checkbox" name="personality"> Lazy</label>
+        <label><input type="checkbox" name="personality"> Crazy</label>
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
